@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/Fondo4.png');
+    background-size: cover; /* Para que el fondo cubra toda la pantalla */
+    color: #FFFCF7; /* Color del texto */
+    display: flex;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.new-navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh; /* Mínimo tamaño de la pantalla */
+    width: 250px; /* Tamaño fijo para la barra de navegación */
+    position: fixed; /* Hacer la barra de navegación estática */
+}
+
+
+.new-navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px; /* Margen para evitar que el color de fondo se salga */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 10px); /* Ocupar todo el ancho menos el margen */
+    text-align: left;
+    display: block; /* Mostrar en cascada */
+}
+
+.new-navbar a:hover {
+    background-color: #65a675;
+}
+
+.new-blue-container {
+    flex: 1; /* Ocupar el espacio restante */
+    margin: 0vh auto; /* Margen superior del 5% del alto de la ventana */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color azul con transparencia */
+    border-radius: 10px; /* Borde redondeado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-title {
+    color: #FFFCF7;
+    margin-bottom: 20px;
+}
+
+.new-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(20, 19, 37, 0.8); /* Color del contenedor con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateX(20%); 
+}
+
+.new-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.new-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFCF7; /* Color del texto de las etiquetas */
+}
+
+.new-form-group input,
+.new-form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.new-invalid-feedback {
+    color: #ff0000; /* Color del mensaje de error */
+    font-size: 0.875em; /* Tamaño del texto de error */
+}
+
+.new-btn {
+    background-color: #65a675;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botón de ancho completo */
+    font-size: 1em; /* Tamaño de la fuente del botón */
+}
+
+.new-btn:hover {
+    background-color: #4d8052;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    width: 100%; /* Establecer el ancho al 100% del viewport */
+    height: 100%; /* Establecer la altura al 100% del viewport */
+}

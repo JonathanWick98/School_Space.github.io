@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/Fondo11.gif');
+    background-size: cover;
+    color: #FFFCF7;
+    display: flex;
+}
+
+.navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh; /* Mínimo tamaño de la pantalla */
+    width: 250px; /* Tamaño fijo para la barra de navegación */
+    position: fixed; /* Fija la barra de navegación */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Permite el desplazamiento dentro de la barra de navegación */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 10px);
+    text-align: left;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #65a675;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 300px; /* Ajusta este valor según sea necesario */
+}
+
+
+.main-content h1 {
+    color: #67b588;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(20, 19, 37, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para distribuir los contenedores en el espacio disponible */
+}
+
+.link-container {
+    width: calc(50% - 20px); /* Calcula el ancho para 6 columnas */
+    margin: 10px; /* Espacio entre los enlaces */
+    background-color: #141325; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espacio interior */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    display: inline-block; /* Mantiene los enlaces en línea */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.sub-container {
+    background-color: #2e2c57;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    height: 150px; /* Altura fija para todos los contenedores */
+}
+
+.sub-container:hover {
+    background-color: #39395c;
+}
+
+.sub-container h2 {
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #fff;
+}
+
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    width: 100%; /* Establecer el ancho al 100% del viewport */
+    height: 100%; /* Establecer la altura al 100% del viewport */
+}
+

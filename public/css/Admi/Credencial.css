@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/Fondo9.png');
+    background-size: cover; /* Para que el fondo cubra toda la pantalla */
+    color: #FFFCF7; /* Color del texto */
+    display: flex;
+}
+
+.navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh; /* Mínimo tamaño de la pantalla */
+    height: 80px; /* Tamaño fijo para la barra de navegación */
+    position: fixed; /* Fijar la barra de navegación en la parte superior */
+    top: 0; /* Establecer la posición en la parte superior */
+    width: 250px; /* Tamaño fijo para la barra de navegación */
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px; /* Margen para evitar que el color de fondo se salga */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 10px); /* Ocupar todo el ancho menos el margen */
+    text-align: left;
+    display: block; /* Mostrar en cascada */
+}
+
+.navbar a:hover {
+    background-color: #65a675;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 80px auto; /* Centro vertical y horizontalmente */
+    padding: 20px;
+    background-color: #1e2b35; /* Color de fondo de la lista de usuarios */
+    border-radius: 10px;
+    transform: translateX(17%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65a675;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #67b588;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    width: 100%; /* Establecer el ancho al 100% del viewport */
+    height: 100%; /* Establecer la altura al 100% del viewport */
+}
+
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center; /* Alineación centrada para todas las celdas */
+}
+
+.custom-table th {
+    background-color: #67b588;
+    color: #333;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #283747; /* Nuevo color de fila para mejorar contraste */
+}
+
+.custom-table tr:hover {
+    background-color: #36454f;
+}

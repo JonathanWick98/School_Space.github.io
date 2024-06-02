@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/fondoespacial4.jpg');
+    background-size: cover;
+    color: #FFFCF7;
+    display: flex;
+}
+
+.navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh; /* Mínimo tamaño de la pantalla */
+    width: 15%;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px; /* Margen para evitar que el color de fondo se salga */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 10px); /* Ocupar todo el ancho menos el margen */
+    text-align: left;
+    display: block; /* Mostrar en cascada */
+}
+
+.navbar a:hover {
+    background-color: #65a675;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.container {
+    flex: 1;
+    max-width: 800px;
+    margin: 30px auto auto;
+    text-align: center;
+    background-color: rgba(20, 19, 37, 0.9);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+h1 {
+    color: #67b588;
+    margin: 0 0 10px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #65a675;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #67b588;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #67b588;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td input[type="number"] {
+    width: 50px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+td:hover {
+    background-color: #f9f9f9;
+}
+
+/* Estilos del gráfico de progreso */
+.progress-chart {
+    margin-top: 20px;
+}
+
+.bar {
+    margin-bottom: 8px;
+    padding: 3px;
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: -1;
+    width: 100%; /* Establecer el ancho al 100% del viewport */
+    height: 100%; /* Establecer la altura al 100% del viewport */
+}
+

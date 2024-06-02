@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/Fondo2.png');
+    background-size: cover; /* Para que el fondo cubra toda la pantalla */
+    color: #FFFCF7; /* Color del texto */
+    display: flex;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    overflow: hidden; /* Oculta el desbordamiento en el eje Y */
+}
+
+.navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh; /* Mínimo tamaño de la pantalla */
+    width: 250px; /* Tamaño fijo para la barra de navegación */
+    position: fixed; /* Fija la barra de navegación */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Permite el desplazamiento dentro de la barra de navegación */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px 0; /* Margen para evitar que el color de fondo se salga */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 20px); /* Ocupar todo el ancho menos el padding */
+    text-align: left;
+    display: block; /* Mostrar en cascada */
+}
+
+.navbar a:hover {
+    background-color: #65a675;
+}
+
+.content {
+    margin-left: 250px; /* Deja espacio para la barra de navegación */
+    padding: 20px;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: calc(100% - 250px); /* Resta el ancho de la barra de navegación */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea el contenido al principio (arriba) */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: #141325; /* Color del contenedor de texto */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Separación del contenedor superior */
+}
+
+h1 {
+    color: #67b588;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65a675;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #67b588;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    width: 100%; /* Establecer el ancho al 100% del viewport */
+    height: 100%; /* Establecer la altura al 100% del viewport */
+}

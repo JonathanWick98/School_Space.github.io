@@ -1,0 +1,113 @@
+/* Estilos combinados con la estética proporcionada */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/galaxi.gif');
+    background-size: cover;
+    color: #FFFCF7;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 10px);
+    text-align: left;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #65a675;
+}
+
+.container {
+    flex: 1;
+    overflow-y: auto;
+    padding-left: 20px;
+    padding-right: 20px; /* Añadido margen derecho */
+    max-width: 400px; /* Ancho máximo del contenedor del perfil */
+    margin: 20px auto; /* Centrar el contenedor */
+    background-color: rgba(20, 19, 37, 0.8);
+    border-radius: 10px;
+    text-align: center; /* Centrar el texto dentro del contenedor */
+}
+
+h1 {
+    margin-top: 0; /* Elimina el margen superior predeterminado */
+}
+
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 0%;
+    width: auto; /* Cambia el ancho según lo que necesites */
+    height: auto; /* Para mantener la proporción */
+    margin-bottom: 10px;
+    border: 3px solid #67b588; /* Borde alrededor de la imagen */
+}
+
+.profile h2 {
+    color: #67b588;
+    margin-bottom: 10px;
+    
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65a675;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #67b588;
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.26); /* Color de fondo opaco */
+    z-index: -1; /* Asegura que esté detrás de otros elementos */
+}
+

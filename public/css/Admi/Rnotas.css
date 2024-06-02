@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/Fondo10.gif');
+    background-size: cover; /* Para que el fondo cubra toda la pantalla */
+    color: #FFFCF7; /* Color del texto */
+    display: flex;
+}
+
+.navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh; /* Mínimo tamaño de la pantalla */
+    width: 250px; /* Ancho fijo para la barra lateral */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px; /* Margen para evitar que el color de fondo se salga */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 10px); /* Ocupar todo el ancho menos el margen */
+    text-align: left;
+    display: block; /* Mostrar en cascada */
+}
+
+.navbar a:hover {
+    background-color: #65a675;
+}
+
+.container {
+    flex: 1; /* Hacer que el container ocupe todo el espacio restante */
+    margin: 50px auto auto; /* Ajuste del margen superior para evitar superposición con el navbar */
+    text-align: center;
+    background-color: rgba(20, 19, 37, 0.9); /* Color del contenedor de texto con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #67b588;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65a675;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #67b588;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 80%; /* Reducimos el ancho del cuadro de notas */
+    border-collapse: collapse;
+    margin: auto; /* Centramos la tabla horizontalmente */
+    background-color: #ffffff; /* Cambiamos el color de fondo del cuadro de notas */
+    border-radius: 10px; /* Agregamos bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregamos sombra */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px; /* Aumentamos el espacio interno de las celdas */
+    text-align: left;
+    font-size: 16px; /* Reducimos el tamaño de la fuente */
+    color: #67b588; /* Cambiamos el color del texto dentro del cuadro de notas */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    width: 100%; /* Establecer el ancho al 100% del viewport */
+    height: 100%; /* Establecer la altura al 100% del viewport */
+}

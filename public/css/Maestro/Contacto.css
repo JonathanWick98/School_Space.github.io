@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/css/Fondo/fondoespacial6.png'); /* Ruta relativa al archivo de imagen */
+    background-size: cover; /* Para que el fondo cubra toda la pantalla */
+    color: #FFFCF7; /* Color del texto */
+    display: flex;
+    position: relative; /* Añadido para asegurar que el overlay funcione correctamente */
+}
+
+.navbar {
+    background-color: #141325;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh; /* Mínimo tamaño de la pantalla */
+    width: 15%;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px; /* Margen para evitar que el color de fondo se salga */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 10px); /* Ocupar todo el ancho menos el margen */
+    text-align: left;
+    display: block; /* Mostrar en cascada */
+}
+
+.navbar a:hover {
+    background-color: #65a675;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+    z-index: -1; /* Colocar detrás de otros elementos */
+}
+
+.container {
+    flex: 1; /* Hacer que el container ocupe todo el espacio restante */
+    max-width: 1000px; /* Ajuste del ancho máximo */
+    height: fit-content;
+    margin: 50px auto; /* Ajuste del margen para centrar */
+    text-align: center;
+    background-color: rgba(20, 19, 37, 0.9); /* Color del contenedor de texto con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #67b588;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contacto-info {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px); /* Ajuste del ancho para tener en cuenta el padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #65a675;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #67b588;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    z-index: -1;
+    width: 100%; /* Establecer el ancho al 100% del viewport */
+    height: 100%; /* Establecer la altura al 100% del viewport */
+}
